@@ -113,7 +113,6 @@ dados_aluno_02[0] = "Ana"
 print("=====")
 # print(dados_aluno_02)
 
-
 meses = ("Jan", "Fev", "")
 
 
