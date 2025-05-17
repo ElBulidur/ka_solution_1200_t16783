@@ -11,6 +11,24 @@
 
 """
 
+# lista_produtos = list()
+
+# for x in range(5):
+#     produto = input(f"Digite o {x+1}º produto: ")
+#     lista_produtos.append(produto)
+
+# lista_produtos.sort()
+
+# for produto in lista_produtos:
+#     print(produto)
+
+
+# frutas = [input(f"Digite a {x+1}ª fruta: ") for x in range(3)]
+
+# frutas.sort()
+
+# print(frutas)
+
 """
 
     Laboratório 2
@@ -26,8 +44,21 @@
             - print()
 
 """
+from random import randint as rdi
 
-from random import randint
+lista_numeros = []
+
+# for x in range(10000):
+#     numero = rdi(1, 100)
+#     if numero > 10:
+#         # print(f"Maior de 10: {numero}")
+#         lista_numeros.append(numero)
+
+# FOR ANINHADO
+# lista_numeros = [ y for y in [rdi(1, 100) for x in range(1, 100)] if y >10 ]
 
 
-numero = randint(100)
+# print(f"Foram gerados {len(lista_numeros)} numeros maiores que 10: {lista_numeros}")
+
+
+
