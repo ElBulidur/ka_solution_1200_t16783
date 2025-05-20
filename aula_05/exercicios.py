@@ -18,3 +18,50 @@
 # LOOP DE REPETIÇÃO
 # ENTRADA E SAÍDA DE DADOS
 # OPERADORES
+
+
+from random import randint as rdi
+
+numero = rdi(1, 100)
+tentativas = 0
+minimo, maximo = 1, 100
+
+while True:
+    tentativas += 1
+    numero_usuario = int(input(f"Informe um valor entre {minimo} e {maximo}: "))
+
+    if numero_usuario < minimo or numero_usuario > maximo: 
+        continue
+
+    if numero_usuario < numero: 
+        minimo = numero_usuario + 1
+    elif numero_usuario > numero: 
+        maximo = numero_usuario - 1
+    else: 
+        break
+
+print(f"Parabens! O numero sorteado foi o {numero}")
+print(f"Voce acertou em {tentativas} tentativas.")
+
+
+from random import randint
+
+def lab01():
+    num_aleatorio = randint(1, 100)
+    num = 0
+    
+    tentativas = 0
+    min = 1
+    max = 100
+    while num != num_aleatorio:
+        num = int(input(f'Informe um número entre {min} e {max}: '))
+       
+        if not (num > max or num < min):
+            if num > num_aleatorio: max = num - 1
+            else: min = num + 1
+        tentativas += 1
+    print(f'\nVocê venceu!!')
+    print(f'Número de tentativas: {tentativas}')
+
+if __name__ == '__main__':
+    lab01()
