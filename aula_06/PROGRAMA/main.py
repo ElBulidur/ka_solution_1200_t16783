@@ -1,5 +1,4 @@
 
-
 def start():
     tela = input("Qual tela você quer acessar? ")
 

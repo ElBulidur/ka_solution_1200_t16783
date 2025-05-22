@@ -18,9 +18,3 @@ def conexao():
     except mysql.connector.Error as e:
         print(f"Erro ao conectar: {e}")
 
-
-conn = conexao()
-
-# CRUD
-
-conn.close()
